@@ -1,6 +1,6 @@
 # JMusicBot-Updater
-Updates JMusicBot Service to given version
-Used for https://github.com/jagrosh/MusicBot while running as a linux systemd service
+Updates JMusicBot Service to given version\
+Used for https://github.com/jagrosh/MusicBot while running as a linux systemd service\
 
 ## Usage
 ```
