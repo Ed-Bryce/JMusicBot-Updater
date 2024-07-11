@@ -4,7 +4,7 @@ Used for https://github.com/jagrosh/MusicBot while running as a linux systemd se
 
 ## Usage
 ```
-./JMusicBot-Update.sh [-v version] [-l link] [-p path] [-s service] [-h]
+./JMusicBot-Updater.sh [-v version] [-l link] [-p path] [-s service] [-h]
 ```
 
 ## Options
