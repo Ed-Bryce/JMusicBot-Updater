@@ -8,8 +8,8 @@ Used for https://github.com/jagrosh/MusicBot while running as a linux systemd se
 ```
 
 ## Options
--v version    Specify the version number (e.g., 1.2.3)
--l link       Specify the direct download link
--p path       Specify the directory path to save JMusicBot.jar (default is current directory)
--s service    Specify the systemd service name (default is JMusicBot.service)
--h            Show this help message
+**-v** version    Specify the version number (e.g., 1.2.3)\
+**-l** link       Specify the direct download link\
+**-p** path       Specify the directory path to save JMusicBot.jar (default is current directory)\
+**-s** service    Specify the systemd service name (default is JMusicBot.service)\
+**-h**            Help message\
