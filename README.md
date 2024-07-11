@@ -1,6 +1,6 @@
 # JMusicBot-Updater
 Updates JMusicBot Service to given version\
-Used for https://github.com/jagrosh/MusicBot while running as a linux systemd service\
+Used for https://github.com/jagrosh/MusicBot while running as a linux systemd service
 
 ## Usage
 ```
@@ -12,4 +12,4 @@ Used for https://github.com/jagrosh/MusicBot while running as a linux systemd se
 **-l** link       Specify the direct download link\
 **-p** path       Specify the directory path to save JMusicBot.jar (default is current directory)\
 **-s** service    Specify the systemd service name (default is JMusicBot.service)\
-**-h**            Help message\
+**-h**            Help message
