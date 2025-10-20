@@ -68,7 +68,7 @@ fi
 
 # Stop the service
 echo "Stopping the $SERVICE_NAME..."
-sudo systemctl stop $SERVICE_NAME
+sudo systemctl stop "$SERVICE_NAME"
 
 # Determine the download URL
 if [ -n "$VERSION" ]; then
@@ -79,10 +79,7 @@ fi
 
 # Download the new version
 echo "Downloading from $URL..."
-wget -O /tmp/JMusicBot.jar $URL
-
-# Check if the download was successful
-if [ $? -ne 0 ]; then
+if ! wget -O /tmp/JMusicBot.jar "$URL"; then
   echo "Download failed. Please check the URL or version number and try again."
   exit 1
 fi
@@ -94,13 +91,13 @@ sudo mv /tmp/JMusicBot.jar "$DOWNLOAD_PATH/JMusicBot.jar"
 # Reload the systemd daemon and restart the service
 echo "Reloading systemd daemon and restarting the $SERVICE_NAME..."
 sudo systemctl daemon-reload
-sudo systemctl start $SERVICE_NAME
+sudo systemctl start "$SERVICE_NAME"
 
 # Wait for a few seconds before checking the status
 sleep $DELAY
 
 # Check the status of the service without pausing
 echo "Checking the status of $SERVICE_NAME..."
-sudo systemctl status $SERVICE_NAME --no-pager 2>/dev/null
+sudo systemctl status "$SERVICE_NAME" --no-pager 2>/dev/null
 
 echo "Update completed."
